@@ -1,0 +1,38 @@
+//color
+$primary-color: #58E1C1;
+
+
+//text-color
+$text-primary: #808080;
+$text-white: #fff;
+$headline-color: $primary-color;
+$link-color: #A6EEFD;
+
+//buttons color
+$btn:(
+    'default': #A6EEFD,
+    'success': #63CC82,
+    'error': #E4757A,
+    'warning': #FD7856,
+    'info': #927BC1
+);
+//Grid system
+$grid:(
+    '3': #DEB2EE,
+    '4': #7EE6FD,
+    '5': #88D9A0,
+    '6': #3FABCA,
+    '7': #EC9FA3,
+    '8': #FD9F85,
+    '12': #80E8D1
+);
+
+//break points
+$sm : 480px;
+$lg: 1024px;
+$max-width:80%;
+
+//fonts
+@import url('https://fonts.googleapis.com/css?family=Lato');
+$font-family: ('Lato', sans-serif);
+

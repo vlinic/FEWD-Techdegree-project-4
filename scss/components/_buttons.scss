@@ -1,0 +1,22 @@
+
+.btn--default{
+    @include button(map-get($btn, 'default') , $text-white);
+}
+.btn--success{
+    @include button(map-get($btn, 'success') , $text-white);    
+}
+.btn--error{
+    @include button(map-get($btn, 'error') , $text-white);
+}
+.btn--warning{
+    @include button(map-get($btn, 'warning') , $text-white);
+}
+.btn--info{
+    @include button(map-get($btn, 'info') , $text-white);
+}
+.btn--success,
+.btn--error,
+.btn--warning,
+.btn--info{
+    @include margin($top: 20px);
+}
