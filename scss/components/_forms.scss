@@ -1,0 +1,16 @@
+
+//.form
+.form__label--hidden{
+    @include displayNone;
+}
+.form__input{
+    border:none;
+    width: 100%;
+    line-height: 2;
+    border-bottom: 2px solid $primary-color;
+    @include margin($buttom: 15px);
+}
+
+::placeholder{
+    font-style: oblique;
+}

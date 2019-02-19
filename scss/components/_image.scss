@@ -1,0 +1,22 @@
+
+//.img--logo
+//.img--frame
+//.img--avatar
+
+.img--logo{
+    @include center;
+}
+
+.img--frame{
+    @include center;
+    display: flex;
+    width: 80%;
+    padding: 4.5%;
+    border: 1px solid black;
+    margin: 5%;    
+}
+
+.img--avatar{
+    @include center;
+    display: flex;    
+}

@@ -41,5 +41,6 @@
     justify-content: center;    
     border-radius: 8px;
     text-transform: uppercase;
+    border: none;
     @content;   
 }

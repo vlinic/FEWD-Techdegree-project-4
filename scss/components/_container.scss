@@ -1,10 +1,5 @@
 .container{
     max-width: $max-width;
     @include center;
-}
-.grid__col--3{
-display: flex;
-    margin-left: auto;
-    margin-right: auto;
-    flex-grow: 1;
+    font-family: $font-family;
 }
