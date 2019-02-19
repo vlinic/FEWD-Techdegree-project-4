@@ -487,18 +487,40 @@ template {
   flex-grow: 1;
 }
 
+.nav {
+  padding: 0;
+}
+
 .nav__item {
   text-decoration: none;
   text-decoration: none;
-  display: flex-block;
+  display: flex;
   flex-grow: 1;
   width: 100%;
   justify-content: center;
   height: 50px;
 }
-.nav__item:hover {
+.nav__item a {
+  width: 100%;
+  display: flex;
+  text-decoration: none;
+  text-transform: uppercase;
+  background: white;
+  color: black;
+  margin-left: auto;
+  margin-right: auto;
+  align-items: center;
+  justify-content: center;
+}
+.nav__item a:hover {
+  width: 100%;
+  display: flex;
   background: #58E1C1;
-  color: #fff;
+  color: white;
+  margin-left: auto;
+  margin-right: auto;
+  align-items: center;
+  justify-content: center;
 }
 
 .btn--default {
