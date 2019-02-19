@@ -487,8 +487,18 @@ template {
   flex-grow: 1;
 }
 
-.nav {
-  margin: 0 auto;
+.nav__item {
+  text-decoration: none;
+  text-decoration: none;
+  display: flex-block;
+  flex-grow: 1;
+  width: 100%;
+  justify-content: center;
+  height: 50px;
+}
+.nav__item:hover {
+  background: #58E1C1;
+  color: #fff;
 }
 
 .btn--default {
