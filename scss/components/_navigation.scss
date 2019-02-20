@@ -12,7 +12,7 @@
     @include navItem;
     a{
         width: 100%;
-        display: flex;
+        @include flexy;
         text-decoration: none;
         text-transform: uppercase;
         background: white;
@@ -22,7 +22,7 @@
     }
     a:hover{
         width: 100%;
-        display: flex; 
+        @include flexy; 
         background: $primary-color;
         color: white;
         @include center;

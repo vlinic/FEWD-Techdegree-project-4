@@ -1,6 +1,9 @@
 
 .btn--default{
     @include button(map-get($btn, 'default') , $text-white);
+    @include media(small){
+        @include margin($left: 10px, $right:10px);
+    }
 }
 .btn--success{
     @include button(map-get($btn, 'success') , $text-white);    
@@ -18,7 +21,8 @@
 .btn--error,
 .btn--warning,
 .btn--info{
-    @media (max-width: $break-m){
+    @include margin($left: 10px, $right:10px);
+    @include media (small){
     @include margin($top: 20px);
     }
 }

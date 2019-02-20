@@ -1,5 +1,9 @@
 
-//.form
+.form{
+    @include media(large){
+        @include margin($top: 20px);
+    }
+}
 .form__label--hidden{
     @include displayNone;
 }

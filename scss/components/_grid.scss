@@ -13,12 +13,13 @@
   // .grid__row
   &__row {
     padding: 1em 10px;
-    display: flex;
-    flex-direction: column;
+    @include flexy($flex-dir: column);
+    
 
     // NOTE: replace with media query mixin if aiming for exceeds
-    @media (min-width: 768px) {
-      flex-direction: row;
+    @include media (large) {
+      @include flexy($flex-dir: row);
+      
     }
   }
 
@@ -40,7 +41,7 @@
         flex-basis: 100%;
 
         // NOTE: replace with media query mixin if aiming for exceeds
-        @media (min-width: 768px) {
+        @include media (large) {
 
           // base stlyes applied to all grid columns
           margin-top: 0;
@@ -59,7 +60,7 @@
   & + & {
 
     // NOTE: replace with media query mixin if aiming for exceeds
-    @media (min-width: 768px) {
+    @include media (large) {
 
       // add grid gutter
       margin-left: 10px;
@@ -91,7 +92,7 @@
 }
 .grid__col--12{
   @media (min-width: $break-m){
-  display: flex;
+  @include flexy;
   }
 }
 
