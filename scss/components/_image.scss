@@ -5,6 +5,9 @@
 
 .img--logo{
     @include center;
+    justify-content: center;
+    width: 70%;
+    display: flex;
 }
 
 .img--frame{

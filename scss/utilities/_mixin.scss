@@ -1,5 +1,6 @@
 @mixin center { 
-    margin: 0 auto;
+    margin-left:  auto;
+    margin-right: auto;
     @content;
 }
 // Margin mixin
@@ -9,6 +10,13 @@
     margin-bottom: $buttom;
     margin-right: $right;
 }
+@mixin padding($top: null, $left: null, $buttom: null, $right: null) {
+    padding-top: $top;
+    padding-left: $left;
+    padding-bottom: $buttom;
+    padding-right: $right;
+}
+
 @mixin displayNone {
     display: none;
 }
@@ -24,13 +32,9 @@
     width: 100%;
     justify-content: center;
     height: 50px;
-    @content;
-    
-    
+    @content;    
 }
     
-
-
 // Button mixins
 @mixin button($color, $text-color){
     display: flex;
@@ -43,4 +47,40 @@
     text-transform: uppercase;
     border: none;
     @content;   
+}
+
+//col mixin
+@mixin grid{
+    @include center;
+    @include margin($buttom: 20px);
+    display: flex;  
+    flex-grow: 1;
+    //background: map-get($grid, '3' );
+    //color:white;
+    justify-content: center;    
+    border-radius: 8px;
+    text-transform: uppercase;
+    width: 100%;
+    height: 40px;
+    align-items: center;
+}
+
+@mixin theme-colors($background){
+    @include padding($left:10px);
+    color: $text-primary;
+    background: $background;
+    display: flex;
+    height: 40px;
+    border-radius: 8px;
+    align-items: center;
+    width: 100%;
+}
+@mixin alignCentar{
+    align-items: center;
+    justify-content: center;
+    @content;
+}
+@mixin roundy{
+    border-radius: $brRad;
+    @content;
 }

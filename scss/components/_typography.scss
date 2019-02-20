@@ -1,0 +1,28 @@
+.link{
+    color: $link-color;
+    text-decoration: none;
+}
+
+.blockquote{
+    border-left: 4px solid $primary-color;
+    font-size:  1.65em;
+    font-style: italic;
+    @include padding($left: 30px);
+    @include margin($right:0);
+}
+
+
+.headline--primary{
+    color: $primary-color;
+    font-size: 2em;
+    font-weight: 800;
+    width: 80%;
+    @include padding($left: 10px);
+}
+
+.headline--secondary{
+    color: $text-primary;
+    font-size: 1em;
+    font-weight: 200;
+    @include padding($buttom: 20px);
+}

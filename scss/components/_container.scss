@@ -2,4 +2,5 @@
     max-width: $max-width;
     @include center;
     font-family: $font-family;
+    color: $text-primary;
 }
