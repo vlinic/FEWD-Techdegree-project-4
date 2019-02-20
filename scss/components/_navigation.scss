@@ -1,8 +1,11 @@
 .nav{
     padding: 0;
-    display: flex;
-    width: 80%;
-    margin-left:auto;
+    @media (min-width: $break-m) {
+        display: flex;
+        width: 90%;
+        @include margin($left: 10%, $right:10%);        
+    }
+    
 }
 
 .nav__item{

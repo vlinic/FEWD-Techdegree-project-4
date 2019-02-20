@@ -18,5 +18,7 @@
 .btn--error,
 .btn--warning,
 .btn--info{
+    @media (max-width: $break-m){
     @include margin($top: 20px);
+    }
 }

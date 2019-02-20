@@ -552,6 +552,12 @@ template {
   width: 100%;
 }
 
+@media (min-width: 768px) {
+  .grid__col--12 {
+    display: flex;
+  }
+}
+
 .centered {
   margin-left: auto;
   margin-right: auto;
@@ -591,9 +597,14 @@ template {
 
 .nav {
   padding: 0;
-  display: flex;
-  width: 80%;
-  margin-left: auto;
+}
+@media (min-width: 768px) {
+  .nav {
+    display: flex;
+    width: 90%;
+    margin-left: 10%;
+    margin-right: 10%;
+  }
 }
 
 .nav__item {
@@ -717,11 +728,13 @@ template {
   border: none;
 }
 
-.btn--success,
+@media (max-width: 768px) {
+  .btn--success,
 .btn--error,
 .btn--warning,
 .btn--info {
-  margin-top: 20px;
+    margin-top: 20px;
+  }
 }
 
 .form__label--hidden {

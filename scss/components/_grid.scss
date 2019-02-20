@@ -86,7 +86,13 @@
   @include theme-colors(map-get($grid, "8"));  
 }
 .grid__col--12.theme__colors{
-  @include theme-colors(map-get($grid, "12"));  
+  @include theme-colors(map-get($grid, "12"));
+   
+}
+.grid__col--12{
+  @media (min-width: $break-m){
+  display: flex;
+  }
 }
 
 .centered{
